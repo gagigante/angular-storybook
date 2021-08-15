@@ -123,6 +123,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "component-documentarion-storybook"
 }
