@@ -7,7 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "storybook:compodoc": "compodoc -p ./tsconfig.json -e json -d ./.storybook",
+    "storybook:run": "npm run storybook:compodoc && start-storybook -p 6006",
+    "storybook:build": "npm run storybook:compodoc && build-storybook -o ./dist-storybook"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +30,13 @@
     "@angular-devkit/build-angular": "~0.1002.0",
     "@angular/cli": "~10.2.0",
     "@angular/compiler-cli": "~10.2.0",
+    "@babel/core": "^7.14.5",
+    "@compodoc/compodoc": "^1.1.11",
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-links": "^6.3.7",
+    "@storybook/angular": "^6.3.7",
+    "babel-loader": "^8.2.2",
     "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
