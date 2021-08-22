@@ -1,4 +1,6 @@
 
+// https://storybook.js.org/docs/angular/configure/overview#configure-story-rendering
+
 import { setCompodocJson } from "@storybook/addon-docs/angular";
 
 import docJson from "./documentation.json";
